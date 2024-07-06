@@ -1,0 +1,45 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Medidores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Controle de Medidores</h1>
+    <form id="recordForm">
+      <input type="hidden" id="recordId">
+      <div>
+        <label for="medidor">Medidor</label><br>
+        <input type="text" id="medidor" required>
+      </div>
+      <div>
+        <label for="nota">Nota</label><br>
+        <input type="text" id="nota" required>
+      </div>
+      <div>
+        <label for="endereco">Endereço</label><br>
+        <input type="text" id="endereco" required>
+      </div>
+      <button type="submit">Salvar</button>
+    </form>
+    <input type="text" id="search" placeholder="Pesquisar/Filtrar">
+    <table id="recordsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Medidor</th>
+          <th>Nota</th>
+          <th>Endereço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
